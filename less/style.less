@@ -1,0 +1,344 @@
+@orange: #f15b27;
+@grey: #6f665b;
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+    a {
+      text-decoration: none;
+    }
+}
+
+.container {
+  width: 100%;
+  height: 101%;
+}
+
+.body-wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+header {
+  position: relative;
+  min-height: 50px;
+  padding: 14px 10px 10px;
+}
+
+.menu {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 25px;
+  margin-left: 19px;
+}
+
+.menu-list {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+    li {
+      display: inline-block;
+      padding-left: 60px;
+        a {
+          color: @grey;
+          text-decoration: none;
+
+        }
+  }
+}
+
+.menu-list a:hover {
+  color: @orange;
+}
+
+.order-btn {
+  display: inline-block;
+  position: relative;
+  float: right;
+  padding: 22px 0;
+  background: @orange;
+  width: 231px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+/*Блок с видео*/
+.video {
+  width: 100%;
+  height: 626px;
+  background: black;
+}
+
+/*тута идет блок с пробным использованиям*/
+
+.try-free {
+  min-height: 100px;
+  background: #7d756b url('../img/back-grey.png') repeat;
+  padding: 39px 0 61px 0;
+    h2 {
+      margin: 0;
+      padding-bottom: 28px;
+      font-family: 'Dosis', sans-serif;
+      font-size: 48px;
+      color: @orange;
+      text-align: center;
+      font-weight: bold;
+    }
+}
+
+.free-minute-text {
+  font-family: 'Dosis', sans-serif;
+  padding-bottom: 15px;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+  font-weight: normal;
+}
+
+.end-data {
+  padding-bottom: 27px;
+  color: white;
+  text-align: center;
+  font-weight: normal;
+}
+
+/*форма пробного пользования*/
+
+.try-free-form  {
+  display: block;
+  margin: 0 auto;
+  max-width: 460px;
+    p {
+      color: #e5e3e1;
+      line-height: 24px;
+      margin: 0 0 17px 0;
+    }
+}
+
+.try-free-form input[type=email] {
+  background: #e5e3e1;
+  box-sizing:border-box;
+  width: 100%;
+  height: 35px;
+  padding: 0 7px;
+  margin-bottom: 6px;
+  border: 0;
+  border-radius: 5px;
+  color:#6f665b;
+}
+
+.try-free-form input[type=submit] {
+  box-sizing:border-box;
+  background: #e5e3e1;
+  padding: 0;
+  width: 100%;
+  height: 35px;
+  border: 0;
+  border-radius: 5px;
+  color:@orange;
+  font-weight: bold;
+}
+/*айдишник, что бы ховер работал на сабмите*/
+#btn-hover:hover {
+  border: 1px solid @orange;
+}
+
+/*Начало преимущества*/
+
+.benefits {
+  min-height: 200px;
+  padding: 44px 0 0 0;
+}
+
+.benefits-title {
+  font-family: 'Dosis', sans-serif;
+  padding-bottom: 16px;
+  font-size: 42px;
+  color: @grey;
+  text-align: center;
+}
+
+.benefits-wrapper {
+  position: relative;
+  max-width: 940px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.benefits-block {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  padding: 120px 0 0 0;
+  width: 220px;
+  font-size: 18px;
+  line-height: 21px;
+  color: @grey;
+  vertical-align: top;
+}
+
+.benefits-block:last-child {
+  margin-right: 0;
+}
+
+/*иконки*/
+
+.eye {
+  background: url("../img/eye.png")no-repeat 50% 0;
+}
+
+.thumbs-up {
+  background: url("../img/thumbs-up.png")no-repeat 50% 0;
+}
+
+.book {
+  background: url("../img/book.png")no-repeat 50% 0;
+}
+
+.market {
+  background: url("../img/market.png")no-repeat 50% 0;
+}
+
+/*кнопка*/
+
+.benefits-btn {
+  display: block;
+  margin:0 auto 72px ;
+  padding: 7px 0 7px;
+  max-width: 460px;
+  background: @orange;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/*Блок выгоды*/
+
+.profit {
+  min-height: 100px;
+    p {
+      display: block;
+      max-width: 810px;
+      color: @grey;
+      line-height: 24px;
+      margin: 0 auto;
+    }
+}
+
+.profit-title {
+  font-family: 'Dosis', sans-serif;
+  margin-bottom: 27px;
+  font-size: 42px;
+  color: @orange;
+  text-align: center;
+}
+
+/*каруселька*/
+.carusel {
+  margin: 44px auto 51px;
+  max-width: 660px;
+}
+
+@media (max-width:700px) {
+  .carusel {
+    display: none;
+  }
+}
+
+/*подвал*/
+
+footer  {
+  position: relative;
+  background: @grey;
+  min-height: 100px;
+  padding: 20px 0 20px;
+}
+/*помощь*/
+.footer-support, {
+  float: left;
+  margin-left: 10px;
+    p {
+      margin: 0;
+      color: #e9dac8;
+      font-family: 'Dosis', sans-serif;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  ul {
+    list-style: none;
+    padding: 0;
+      a {
+        color: white;
+        line-height: 24px;
+      }
+  }
+}
+/*соц сети*/
+.footer-tuned {
+  margin-right: 10px;
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+    p {
+      margin: 0;
+      color: #e9dac8;
+      font-family: 'Dosis', sans-serif;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  a {
+    margin-right: 5px;
+  }
+}
+/*логотип*/
+.footer-logo {
+  display: block;
+  background-image: url('../img/logo-footer.png');
+  width: 231px;
+  height: 69px;
+  margin: 60px auto 0;
+}
+/*нижняя часть футера*/
+.footer-ather {
+  clear: both;
+  padding-top: 70px;
+}
+
+.terms-privacy {
+  float: left;
+  display: block;
+  margin-left: 10px;
+   a {
+     font-size: 14px;
+     color: #c9c5c5;
+     margin-right: 10px;
+   }
+}
+
+.copyright {
+  max-width: 340px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #c9c5c5;
+    p {
+      margin: 0;
+    }
+}
