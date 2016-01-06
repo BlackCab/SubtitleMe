@@ -34,7 +34,7 @@ body {
 
 .contact-us-pop-up {
   display: block;
-  position: absolute;
+  position: fixed;
   background: rgba(63,63,63,0.8);
   padding: 50px 0 0 0;
   width: 100%;
@@ -55,33 +55,72 @@ body {
 
 .contact-us-form {
     p {
-      margin: 0;
+      margin:7px 0 4px;
       color: white;
       font-family: 'Dosis', sans-serif;
+      line-height: 24px;
     }
 }
 
 .contact-us-form input[type=text] {
   width: 100%;
+  box-sizing: border-box;
+  height: 39px;
+  padding: 0 6px 0;
+  border-radius: 5px;
   border: 0;
   background: #ececec;
+  color:#6f665b;
 }
 
 .contact-us-form input[type=email] {
   width: 100%;
+  box-sizing: border-box;
+  height: 39px;
+  padding: 0 6px 0;
+  border-radius: 5px;
   border: 0;
   background: #ececec;
+  color:#6f665b;
+}
+
+#contact-us-question {
+  height: 74px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 6px 10px;
+  border-radius: 5px;
+  border: 0;
+  background: #ececec;
+  color:#6f665b;
 }
 
 .contact-us-form input[type=submit] {
   font-family: 'Dosis', sans-serif;
+  margin: 26px 0 0 0;
   width: 100%;
+  height: 39px;
   border: 0;
+  border-radius: 5px;
   background: @orange;
   color: white;
 }
 
-/*шапка*/
+.underline {
+  text-decoration: underline;
+}
+
+.contact-us-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 30px;
+  height: 30px;
+  background: url('../img/close.png')no-repeat;
+  z-index: 20;
+}
+
+/*---------------шапка---------------*/
 header {
   position: relative;
   min-height: 50px;
