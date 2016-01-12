@@ -11,6 +11,11 @@
   clear: both;
 }
 
+::-webkit-input-placeholder {color:#7d756b;font-size: 16px} /*---------костыль для стилизации placeholder-----------*/
+::-moz-placeholder          {color:#7d756b;font-size: 16px}
+:-moz-placeholder           {color:#7d756b;font-size: 16px}
+:-ms-input-placeholder      {color:#7d756b;font-size: 16px}
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
@@ -35,7 +40,7 @@ body {
 .contact-us-pop-up {
   display: none; /*вкл-выкл*/
   position: fixed;
-  background: rgba(63,63,63,0.8);
+  background: rgba(63,63,63,0.9);
   padding: 50px 0 0 0;
   width: 100%;
   height: 100%;
@@ -123,7 +128,7 @@ body {
 .order-pop-up {
   display: block; /*вкл-выкл*/
   position: fixed;
-  background: rgba(63,63,63,0.8);
+  background: rgba(63,63,63,0.9);
   padding: 50px 0 0 0;
   width: 100%;
   height: 100%;
@@ -135,12 +140,137 @@ body {
   width: 340px ;
 }
 
+.order-pop-up-form {
+  position: relative;
+  p {
+    margin:7px 0 4px;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    line-height: 24px;
+  }
+}
+
+.order-pop-up-form input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  height: 39px;
+  padding: 0 6px 0;
+  border-radius: 5px;
+  border: 0;
+  background: #ececec;
+  color:#6f665b;
+}
+
+.order-pop-up-form input[type=email] {
+  width: 100%;
+  box-sizing: border-box;
+  height: 39px;
+  padding: 0 6px 0;
+  border-radius: 5px;
+  border: 0;
+  background: #ececec;
+  color:#6f665b;
+}
+
+.order-pop-up-form-uppercase {
+  display: inline-block;
+  margin: 20px 0 0 0;
+  color: white;
+  font-family: 'Dosis', sans-serif;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+
+.order-pop-up-form input[type=radio] {
+  margin-left: 40px;
+}
 
 
 
+.order-pop-up-form input[type=number] {
+  width: 60px;
+  box-sizing: border-box;
+  height: 37px;
+  padding: 0 0 0 18px;
+  margin: 0 6px 0 22px;
+  border-radius: 5px;
+  border: 0;
+  background: #ececec;
+  color:#6f665b;
+}
 
+.number-form {
+  color: white;
+  font-family: 'Dosis', sans-serif;
+  line-height: 24px;
+  text-transform: uppercase;
+}
 
+.order-pop-up-form select {
+  width: 139px;
+  box-sizing: border-box;
+  height: 37px;
+  padding: ;
+  margin-left: 3px;
+  border-radius: 5px;
+  border: 0;
+  background: #ececec;
+  color:#6f665b;
+}
 
+#discount-enter {
+  width: 210px;
+  box-sizing: border-box;
+  height: 37px;
+  padding: 0 6px 0;
+  margin-left: 12px;
+  border-radius: 5px;
+  border: 0;
+  background: #ececec;
+  color:#6f665b;
+}
+
+.order-upload {
+  display: inline-block;
+  margin:7px 0 4px 220px;
+  float: right;
+  color: white;
+  font-family: 'Dosis', sans-serif;
+  line-height: 24px;
+}
+
+#order-pop-up-requirements {
+  height: 74px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 6px 10px;
+  border-radius: 5px;
+  border: 0;
+  background: #ececec;
+  color:#6f665b;
+}
+
+.order-pop-up-form input[type=submit] {
+  font-family: 'Dosis', sans-serif;
+  margin: 26px 0 0 0;
+  width: 100%;
+  height: 39px;
+  border: 0;
+  border-radius: 5px;
+  background: @orange;
+  color: white;
+}
+
+.order-pop-up-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 30px;
+  height: 30px;
+  background: url('../img/close.png')no-repeat;
+  z-index: 20;
+}
 
 
 

@@ -38,19 +38,37 @@
             <form action="#" method="post" name="#" class="order-pop-up-form">
                 <fieldset>
                     <p>Name</p>
-                    <input type="text" name="" placeholder="name">
+                    <input type="text" name="#" placeholder="name">
                     <p>E-mail</p>
-                    <input type="email" name="" placeholder="e-mail">
-                    <p>Entire language</p>
-                    <label><input type="radio" value="1" name="k"><span></span>En</label>
-                    <label><input type="radio" value="2" name="k"><span></span>Ru</label>
-                    <p>Caption language</p>
-                    <label><input type="radio" value="1" name="c"><span></span>En</label>
-                    <label><input type="radio" value="2" name="c"><span></span>Ru</label>
-                    <p>Video duration</p><input type="number" min="00" value="00">H<input type="number" min="00" max="59" value="00">MIN
+                    <input type="email" name="#" placeholder="e-mail">
+                    <span class="order-pop-up-form-uppercase">Entire language</span>
+                        <label><input type="radio" value="1" name="e"><span></span>En</label>
+                        <label><input type="radio" value="2" name="e"><span></span>Ru</label>
+                    <span class="order-pop-up-form-uppercase">Caption language</span>
+                        <label><input type="radio" value="1" name="c"><span></span>En</label>
+                        <label><input type="radio" value="2" name="c"><span></span>Ru</label>
+                    <span class="order-pop-up-form-uppercase">Video duration</span>
+                        <label><input type="number" min="0" value="00"><span class="number-form">H</label>
+                        <label><input type="number" min="0" max="59" value="00"><span class="number-form">MIN</span></label>
+                    <span class="order-pop-up-form-uppercase">How much time we have?</span>
+                        <select>
+                            <option>24 hours</option>
+                            <option>1 week</option>
+                            <option>1 month</option>
+                        </select>
+                    <span class="order-pop-up-form-uppercase">discount code</span>
+                        <input type="rext" id="discount-enter" name="#">
+                    <p>Upload file or insert link</p>
+                        <input type="text" name="#">
+                            <a href="#" class="order-upload"><b>+</b>Add more files</a>
+                    <p>Special requirements (optional)</p>
+                        <textarea rows="3" id="order-pop-up-requirements" form
+                                  name="#" placeholder="Special requirements"></textarea>
+                    <input type="submit" name="" value="Submit">
                 </fieldset>
             </form>
         </div>
+        <a href="#" class="order-pop-up-close"></a>
     </div>
     <div class="body-wrapper">
         <header>
