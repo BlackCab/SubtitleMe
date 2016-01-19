@@ -3,14 +3,14 @@ $(document).ready(function() {
         event.preventDefault();
         $('#overlay').fadeIn(400,
             function(){
-                $('#modal_form')
+                $('#order-pop-up')
                     .css('display', 'block')
                     .animate({opacity: 1, top: '50%'}, 200);
             });
     });
 
-    $('#modal_close, #overlay').click( function(){
-        $('#modal_form')
+    $('#order-pop-up-close, #overlay').click( function(){
+        $('order-pop-up')
             .animate({opacity: 0, top: '45%'}, 200,
             function(){ // пoсле aнимaции
                 $(this).css('display', 'none');
