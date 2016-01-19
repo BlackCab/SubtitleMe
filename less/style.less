@@ -16,6 +16,13 @@
 :-moz-placeholder           {color:#7d756b;font-size: 16px}
 :-ms-input-placeholder      {color:#7d756b;font-size: 16px}
 
+@media (max-width: 700px) {
+  ::-webkit-input-placeholder {color:#7d756b;font-size: 14px} /*---------костыль для стилизации placeholder-----------*/
+  ::-moz-placeholder          {color:#7d756b;font-size: 14px}
+  :-moz-placeholder           {color:#7d756b;font-size: 14px}
+  :-ms-input-placeholder      {color:#7d756b;font-size: 14px}
+}
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
@@ -523,11 +530,11 @@ header {
     }
 }
 
-.try-free-form input[type=email] {
+.try-free-form-edit input[type=email] {
   background: #e5e3e1;
   box-sizing:border-box;
   width: 100%;
-  height: 35px;
+  height: 36px;
   padding: 0 7px;
   margin-bottom: 6px;
   border: 0;
@@ -535,12 +542,12 @@ header {
   color:#6f665b;
 }
 
-.try-free-form input[type=submit] {
+.try-free-form-edit input[type=submit] {
   box-sizing:border-box;
   background: #e5e3e1;
   padding: 0;
   width: 100%;
-  height: 35px;
+  height: 36px;
   border: 0;
   border-radius: 5px;
   color:@orange;
@@ -577,12 +584,22 @@ header {
   .try-free-form  {
     display: block;
     margin: 0 3.75% 0;
+    max-width: 700px;
     width: 92.1875%;
     p {
       color: #e5e3e1;
       line-height: 14px;
       margin: 0 0 7px 0;
+      text-align: center;
     }
+  }
+
+  .try-free-form-edit {
+    width: 100%;
+  }
+
+  #btn-hove {
+    border: 1px solid @orange;
   }
 }
 
@@ -656,6 +673,37 @@ header {
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+  .benefits {
+    min-height: 200px;
+    padding: 12px 0 0 0;
+  }
+
+  .benefits-title {
+    font-family: 'Dosis', sans-serif;
+    padding-bottom: 18px;
+    font-size: 18px;
+  }
+
+  .benefits-block {
+    display: inline-block;
+    position: relative;
+    margin-right: 5%;
+    margin-bottom: 32px;
+    padding: 120px 0 0 0;
+    width: 47.5%;
+    font-size: 12px;
+    font-weight: ;
+    line-height: 14px;
+    color: @grey;
+    vertical-align: top;
+  }
+
+  .benefits-block:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
 /*Блок выгоды*/
