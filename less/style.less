@@ -351,7 +351,7 @@ body {
   background: url('../img/discount.png');
 }
 
-/*---------------шапка---------------*/
+/*--------------------------шапка-------------------------*/
 header {
   position: relative;
   min-height: 50px;
@@ -484,7 +484,7 @@ header {
     height: 175px;
   }
 }
-/*тута идет блок с пробным использованиям*/
+/*-------------------тута идет блок с пробным использованиям--------------------*/
 
 .try-free {
   min-height: 100px;
@@ -597,12 +597,7 @@ header {
   .try-free-form-edit {
     width: 100%;
   }
-
-  #btn-hove {
-    border: 1px solid @orange;
-  }
 }
-
 
 /*Начало преимущества*/
 
@@ -678,7 +673,7 @@ header {
 @media (max-width: 700px) {
   .benefits {
     min-height: 200px;
-    padding: 12px 0 0 0;
+    padding: 12px 3.75% 0;
   }
 
   .benefits-title {
@@ -693,9 +688,9 @@ header {
     margin-right: 5%;
     margin-bottom: 32px;
     padding: 120px 0 0 0;
-    width: 47.5%;
+    width: 45.625%;
     font-size: 12px;
-    font-weight: ;
+    font-weight: bold;
     line-height: 14px;
     color: @grey;
     vertical-align: top;
@@ -704,9 +699,21 @@ header {
   .benefits-block:nth-child(2n) {
     margin-right: 0;
   }
+
+  .benefits-btn {
+    margin:0 0 36px 0;
+    padding: 7px 0;
+    width: 100%;
+    max-width: 700px;
+    background: @orange;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+  }
 }
 
-/*Блок выгоды*/
+/*-----------------------Блок выгоды---------------------------*/
 
 .profit {
   min-height: 100px;
@@ -727,7 +734,29 @@ header {
   text-align: center;
 }
 
-/*каруселька*/
+@media (max-width: 700px) {
+  .profit {
+    min-height: 50px;
+    p {
+      max-width: 700px;
+      font-size: 12px;
+      line-height: 14px;
+      margin: 0 3.75% 15px;
+    }
+  }
+
+  .profit-title {
+    font-family: 'Dosis', sans-serif;
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    color: @orange;
+    text-align: center;
+  }
+}
+
+/*----------------каруселька-------------------*/
 .carusel {
   margin: 44px auto 51px;
   max-width: 660px;
@@ -739,7 +768,7 @@ header {
   }
 }
 
-/*подвал*/
+/*-----------------------подвал-------------------*/
 
 footer  {
   position: relative;
@@ -818,4 +847,70 @@ footer  {
     p {
       margin: 0;
     }
+}
+
+@media (max-width: 700px) {
+  footer  {
+    position: relative;
+    background: @grey;
+    min-height: 50px;
+    padding: 5px 3.75% 5px;
+  }
+
+  .footer-support {
+    display: none;
+  }
+
+  .footer-logo {
+    display: inline-block;
+    float: left;
+    background-image: url('../img/logo-footer.png')no-repeat;
+    background-size: 99px 29px;
+    width: 99px;
+    height: 29px;
+    margin: 12px auto 0;
+  }
+
+  .footer-tuned {
+    margin-right:12px 0 0 0;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    p {
+      margin: 0 0 5px 0;
+      color: #e9dac8;
+      font-family: 'Dosis', sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+    }
+    a {
+      margin-right: 5px;
+       img {
+         width: 24px;
+         height: 24px;
+       }
+    }
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  .footer-ather {
+    clear: both;
+    padding-top: 0;
+  }
+
+  .terms-privacy {
+    float: left;
+    display: none;
+    margin-left: 10px;
+    a {
+      font-size: 14px;
+      color: #c9c5c5;
+      margin-right: 10px;
+    }
+  }
 }
