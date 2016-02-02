@@ -104,8 +104,8 @@
                             <input type="radio" value="2" name="x" id="xru"checked><label for="xru"></label><span class="calculate-number-form">RUSSIAN</span>
                         </div>
                         <span class="calculate-form-title calc-icon-time">Video duration</span>
-                        <label><input type="number" min="0" value="00"><span class="calculate-number-form">H</span></label>
-                        <label><input type="number" min="0" max="59" value="00"><span class="calculate-number-form">MIN</span></label>
+                        <label><input type="number" min="0" max="99" value="00"><span class="calculate-number-form">H</span></label>
+                        <label><input type="number" min="0" max="99" value="00"><span class="calculate-number-form">MIN</span></label>
                         <span class="calculate-form-title calc-icon-calendar">How much time we have?</span>
                         <select>
                             <option>24 hours</option>
@@ -115,7 +115,7 @@
                         <span class="calculate-form-title calc-icon-discount">discount code</span>
                         <input type="rext" id="discount-enter" name="#">
                         <div class="calculate-price">
-                            <p>PRICE <span>000.00</span> USD</p>
+                            <p>PRICE <span class="calculate-price-number">000.00</span> USD</p>
                             <input type="submit" name="#" value="Order">
                         </div>
                     </fieldset>
@@ -127,7 +127,7 @@
                         intrested in languages that are not
                         described please send  us custom order
                         and we will be appreciate to help you out.</p>
-                    <form action="#" method="post" name="#" class="#">
+                    <form action="#" method="post" name="#" class="custom-orders-form">
                         <fieldset>
                             <input type="text" placeholder="Name">
                             <input type="email" placeholder="E-mail">

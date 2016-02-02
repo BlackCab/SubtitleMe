@@ -948,12 +948,13 @@ footer  {
 
 .calculate-form-title {
   display: inline-block;
+  position: relative;
   font-family: 'Dosis', sans-serif;
   text-transform: uppercase;
   line-height: 18px;
   color: @grey;
   padding: 0 0 0 70px;
-  margin: 0 0 48px 0;
+  margin: 0 0 41px 0;
 }
 
 /*горе-радиобокс начало*/
@@ -1034,20 +1035,28 @@ footer  {
   color:#6f665b;
 }
 
-#calculate-form-requirements {
-  height: 74px;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 10px 6px 10px;
+.calculate-price {
+  width: 209px;
+  float: right;
+    p {
+      margin:-21px 0 0 0;
+      color: @orange;
+      font-family: 'Dosis', sans-serif;
+      font-size: 24px;
+      line-height: 24px;
+    }
+}
+
+.calculate-price-number {
+  border: 2px solid @grey;
   border-radius: 5px;
-  border: 0;
-  background: #ececec;
-  color:#6f665b;
+  padding: 4.5px 10px 4.5px;
+  margin: 0 6px 0;
 }
 
 .calculate-form input[type=submit] {
-  font-family: 'Dosis', sans-serif;
-  margin: 26px 0 0 0;
+  font-family: 'lato', sans-serif;
+  margin: 21px 0 0 0;
   width: 100%;
   height: 39px;
   border: 0;
@@ -1059,13 +1068,13 @@ footer  {
 
 /*---оформление иконок для калькулятора-----*/
 
-/*.calc-icon-speaker:before {
+.calc-icon-speaker:before {
   content: "";
   width: 34px;
   height: 32px;
   position: absolute;
-  top: -3px;
-  left: -57px;
+  top: -5px;
+  left: 21px;
   background: url('../img/speaker.png');
 }
 
@@ -1074,8 +1083,8 @@ footer  {
   width: 34px;
   height: 32px;
   position: absolute;
-  top: -3px;
-  left: -57px;
+  top: -5px;
+  left: 21px;
   background: url('../img/speech.png');
 }
 
@@ -1084,8 +1093,8 @@ footer  {
   width: 35px;
   height: 37px;
   position: absolute;
-  top: -7px;
-  left: -58px;
+  top: -10px;
+  left: 21px;
   background: url('../img/time.png');
 }
 
@@ -1094,8 +1103,8 @@ footer  {
   width: 36px;
   height: 36px;
   position: absolute;
-  top: -6px;
-  left: -58px;
+  top: -8px;
+  left: 21px;
   background: url('../img/calendar.png');
 }
 
@@ -1104,17 +1113,58 @@ footer  {
   width: 39px;
   height: 39px;
   position: absolute;
-  top: -8px;
-  left: -59px;
+  top: -10px;
+  left: 21px;
   background: url('../img/discount.png');
-}*/
+}
 
-/*---------------------------------------------*/
+/*---------------------под заказ------------------------*/
 
 .custom-orders {
-  margin-top: 7px;
+  margin-top: 8px;
+  padding: 15px 25px 26px;
   float: right;
   background: @grey;
+  border-radius: 2px;
+  box-sizing: border-box;
   width: 310px;
   min-height: 50px;
+   h2 {
+     font-family: 'Dosis', sans-serif;
+     margin: 0 0 11px 0;
+     color: white;
+     font-size: 30px;
+     font-weight: normal;
+     text-align: center;
+   }
+   p {
+     margin: 0 0 28px 0;
+     font-size: 14px;
+     line-height: 18px;
+     color: white;
+   }
+}
+
+.custom-orders-form input[type=text],
+.custom-orders-form input[type=email],
+{
+  margin-bottom: 15px;
+  padding: 0 7px 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 35px;
+  background: #e5e3e1;
+  border: 0;
+  border-radius: 5px;
+  color: #504a43;
+}
+
+.custom-orders-form input[type=submit] {
+  margin: 16px 0 0 0;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  background: @orange;
+  color: white;
 }
