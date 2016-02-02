@@ -1,4 +1,9 @@
-function showPopUp() {
-		    contactPopUp = document.getElementById('contactPopUp');
-		    contactPopUp.style.display = "block";
+function showPopUp(id) {
+		    popUp = document.getElementById(id);
+		    popUp.style.display = "block";
 		}
+		
+function hidePopUp(id) {
+                    popUp = document.getElementById(id);
+                    popUp.style.display = "none";
+                }
