@@ -80,7 +80,7 @@
             <a href="#" class="header-menu-open"></a>
             <nav class="menu clearfix">
                 <ul class="menu-list">
-                    <li><a href="#">Get a Qoute</a></li>
+                    <li><a href="#">Get a Quote</a></li>
                     <li><a href="#">feedbacks</a></li>
                     <li><a href="#">Contact us </a></li>
                 </ul>
@@ -88,36 +88,40 @@
             <a href="#" class="order-btn">Order</a>
         </header>
         <main>
-            <div class="calculate-page clearfix">
+            <div class="get-a-quote-page clearfix">
                 <div class="calculate">
-                    <form action="#" method="post" name="#" class="order-pop-up-form">
+                    <h1>Calculate the price</h1>
+                    <form action="#" method="post" name="#" class="calculate-form">
                         <fieldset>
-                        <span class="order-pop-up-form-title icon-speaker">Entire language</span>
-                        <div class="order-pop-up-radio-wrapper">
-                            <input type="radio" value="1" name="e" id="een" checked><label for="een"></label><span class="number-form">En</span>
-                            <input type="radio" value="2" name="e" id="eru"><label for="eru"></label><span class="number-form">Ru</span>
+                        <span class="calculate-form-title calc-icon-speaker">Choose entire language</span>
+                        <div class="calculate-form-radio-wrapper">
+                            <input type="radio" value="1" name="c" id="cen" checked><label for="cen"></label><span class="calculate-number-form">ENGLISH</span>
+                            <input type="radio" value="2" name="c" id="cru"><label for="cru"></label><span class="calculate-number-form">RUSSIAN</span>
                         </div>
-                        <span class="order-pop-up-form-title icon-speech">Caption language</span>
-                        <div class="order-pop-up-radio-wrapper">
-                            <input type="radio" value="1" name="v" id="ven"><label for="ven"></label><span class="number-form">En</span>
-                            <input type="radio" value="2" name="v" id="vru"checked><label for="vru"></label><span class="number-form">Ru</span>
+                        <span class="calculate-form-title calc-icon-speech">Choose caption language</span>
+                        <div class="calculate-form-radio-wrapper">
+                            <input type="radio" value="1" name="x" id="xen"><label for="xen"></label><span class="calculate-number-form">ENGLISH</span>
+                            <input type="radio" value="2" name="x" id="xru"checked><label for="xru"></label><span class="calculate-number-form">RUSSIAN</span>
                         </div>
-                        <span class="order-pop-up-form-title icon-time">Video duration</span>
-                        <label><input type="number" min="0" value="00"><span class="number-form">H</span></label>
-                        <label><input type="number" min="0" max="59" value="00"><span class="number-form">MIN</span></label>
-                        <span class="order-pop-up-form-title icon-calendar">How much time we have?</span>
+                        <span class="calculate-form-title calc-icon-time">Video duration</span>
+                        <label><input type="number" min="0" value="00"><span class="calculate-number-form">H</span></label>
+                        <label><input type="number" min="0" max="59" value="00"><span class="calculate-number-form">MIN</span></label>
+                        <span class="calculate-form-title calc-icon-calendar">How much time we have?</span>
                         <select>
                             <option>24 hours</option>
                             <option>1 week</option>
                             <option>1 month</option>
                         </select>
-                        <span class="order-pop-up-form-title icon-discount">discount code</span>
+                        <span class="calculate-form-title calc-icon-discount">discount code</span>
                         <input type="rext" id="discount-enter" name="#">
-                        <input type="submit" name="" value="Order">
+                        <div class="calculate-price">
+                            <p>PRICE <span>000.00</span> USD</p>
+                            <input type="submit" name="#" value="Order">
+                        </div>
                     </fieldset>
                     </form>
                 </div>
-                <div class="custom-orders">
+                <div class="custom-orders clearfix">
                     <h2>For custom orders</h2>
                     <p>If you have high volume projects or
                         intrested in languages that are not

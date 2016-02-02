@@ -918,11 +918,19 @@ footer  {
 
 /*-------------------------------------Начало калькулятора-------------------------------------------*/
 
-.calculate-page {
+.get-a-quote-page {
   margin: 81px auto 85px;
   width: 960px;
   min-height: 50px;
   position: relative;
+    h1 {
+      margin: -5px 0 34px 24px;
+      font-family: 'Dosis', sans-serif;
+      font-size: 36px;
+      line-height: 36px;
+      font-weight: normal;
+      color: @orange;
+    }
 }
 /*--------------------------------------------*/
 
@@ -931,6 +939,175 @@ footer  {
   min-height: 50px;
   float: left;
 }
+
+/*---------сам калькулятор-------------------*/
+.calculate-form {
+  position: relative;
+  color: @grey;
+}
+
+.calculate-form-title {
+  display: inline-block;
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+  line-height: 18px;
+  color: @grey;
+  padding: 0 0 0 70px;
+  margin: 0 0 48px 0;
+}
+
+/*горе-радиобокс начало*/
+.calculate-form-radio-wrapper {
+  display: inline-block;
+  float: right;
+  margin: 0 88px 0 0;
+}
+
+.calculate-form input[type=radio] {
+  display: none;
+}
+
+.calculate-form input[type=radio]+label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 40px;
+  margin-right: 6px;
+  height: 20px;
+  top: 3px;
+}
+
+.calculate-form input[type=radio]+label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../img/calculate-btn-sprite.png');
+  top: 2px;
+}
+
+.calculate-form input[type=radio]:checked+label:before {
+  background-position:0 -20px;
+}
+
+/*горе-радиобокс конец*/
+
+.calculate-form input[type=number] {
+  width: 60px;
+  box-sizing: border-box;
+  height: 37px;
+  padding: 0 0 0 18px;
+  margin: 0 6px 0 30px;
+  border-radius: 5px;
+  border: 2px solid @grey;
+  background: white;
+  color:#6f665b;
+}
+
+.calculate-number-form {
+  font-family: 'Dosis', sans-serif;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.calculate-form select {
+  width: 139px;
+  box-sizing: border-box;
+  height: 37px;
+  padding-left: 25px;
+  margin:0 25px 0 18px;
+  border-radius: 5px;
+  border:2px solid @grey;
+  background: white;
+  color:#6f665b;
+}
+
+#discount-enter {
+  width: 210px;
+  box-sizing: border-box;
+  height: 37px;
+  padding: 0 6px 0;
+  margin-left: 28px;
+  border-radius: 5px;
+  border: 2px solid @grey;
+  background: white;
+  color:#6f665b;
+}
+
+#calculate-form-requirements {
+  height: 74px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 6px 10px;
+  border-radius: 5px;
+  border: 0;
+  background: #ececec;
+  color:#6f665b;
+}
+
+.calculate-form input[type=submit] {
+  font-family: 'Dosis', sans-serif;
+  margin: 26px 0 0 0;
+  width: 100%;
+  height: 39px;
+  border: 0;
+  border-radius: 5px;
+  background: @orange;
+  color: white;
+}
+
+
+/*---оформление иконок для калькулятора-----*/
+
+/*.calc-icon-speaker:before {
+  content: "";
+  width: 34px;
+  height: 32px;
+  position: absolute;
+  top: -3px;
+  left: -57px;
+  background: url('../img/speaker.png');
+}
+
+.calc-icon-speech:before {
+  content: "";
+  width: 34px;
+  height: 32px;
+  position: absolute;
+  top: -3px;
+  left: -57px;
+  background: url('../img/speech.png');
+}
+
+.calc-icon-time:before {
+  content: "";
+  width: 35px;
+  height: 37px;
+  position: absolute;
+  top: -7px;
+  left: -58px;
+  background: url('../img/time.png');
+}
+
+.calc-icon-calendar:before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: -6px;
+  left: -58px;
+  background: url('../img/calendar.png');
+}
+
+.calc-icon-discount:before {
+  content: "";
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  top: -8px;
+  left: -59px;
+  background: url('../img/discount.png');
+}*/
 
 /*---------------------------------------------*/
 
