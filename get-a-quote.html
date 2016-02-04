@@ -40,13 +40,13 @@
             <form action="#" method="post" name="#" class="order-pop-up-form">
                 <fieldset>
                     <p>Name</p>
-                    <input type="text" name="#" placeholder="name">
+                    <input type="text" name="#" placeholder="name" id="order-name">
                     <p>E-mail</p>
-                    <input type="email" name="#" placeholder="e-mail">
+                    <input type="email" name="#" placeholder="e-mail" id="order-email">
                     <span class="order-pop-up-form-title icon-speaker">Entire language</span>
                     <div class="order-pop-up-radio-wrapper">
-                        <input type="radio" value="1" name="e" id="een" checked><label for="een"></label><span class="number-form">En</span>
-                        <input type="radio" value="2" name="e" id="eru"><label for="eru"></label><span class="number-form">Ru</span>
+                        <input type="radio" value="1" name="e" id="een"><label for="een"></label><span class="number-form">En</span>
+                        <input type="radio" value="2" name="e" id="eru" checked><label for="eru"></label><span class="number-form">Ru</span>
                     </div>
                     <span class="order-pop-up-form-title icon-speech">Caption language</span>
                     <div class="order-pop-up-radio-wrapper">
@@ -54,16 +54,16 @@
                         <input type="radio" value="2" name="v" id="vru"checked><label for="vru"></label><span class="number-form">Ru</span>
                     </div>
                     <span class="order-pop-up-form-title icon-time">Video duration</span>
-                    <label><input type="number" min="0" value="00"><span class="number-form">H</span></label>
-                    <label><input type="number" min="0" max="59" value="00"><span class="number-form">MIN</span></label>
+                    <label><input type="number" min="0" value="00" id="video-h"><span class="number-form">H</span></label>
+                    <label><input type="number" min="0" max="59" value="00" id="video-min"><span class="number-form">MIN</span></label>
                     <span class="order-pop-up-form-title icon-calendar">How much time we have?</span>
-                    <select>
+                    <select id="order-limit-select">
                         <option>24 hours</option>
                         <option>1 week</option>
                         <option>1 month</option>
                     </select>
                     <span class="order-pop-up-form-title icon-discount">discount code</span>
-                    <input type="rext" id="discount-enter" name="#">
+                    <input type="text" id="discount-enter" name="#">
                     <p>Insert link to video</p>
                     <input type="text" name="#">
                     <p>Special requirements (optional)</p>
@@ -95,8 +95,8 @@
                         <fieldset>
                         <span class="calculate-form-title calc-icon-speaker">Choose entire language</span>
                         <div class="calculate-form-radio-wrapper">
-                            <input type="radio" value="1" name="c" id="cen" checked><label for="cen"></label><span class="calculate-number-form">ENGLISH</span>
-                            <input type="radio" value="2" name="c" id="cru"><label for="cru"></label><span class="calculate-number-form">RUSSIAN</span>
+                            <input type="radio" value="1" name="c" id="cen"><label for="cen"></label><span class="calculate-number-form">ENGLISH</span>
+                            <input type="radio" value="2" name="c" id="cru" checked><label for="cru"></label><span class="calculate-number-form">RUSSIAN</span>
                         </div>
                         <span class="calculate-form-title calc-icon-speech">Choose caption language</span>
                         <div class="calculate-form-radio-wrapper">
@@ -104,19 +104,19 @@
                             <input type="radio" value="2" name="x" id="xru"checked><label for="xru"></label><span class="calculate-number-form">RUSSIAN</span>
                         </div>
                         <span class="calculate-form-title calc-icon-time">Video duration</span>
-                        <label><input type="number" min="0" max="99" value="00"><span class="calculate-number-form">H</span></label>
-                        <label><input type="number" min="0" max="99" value="00"><span class="calculate-number-form">MIN</span></label>
+                        <label><input type="number" min="0" placeholder="00" value="00" id="video-h-get-a-quote"><span class="calculate-number-form">H</span></label>
+                        <label><input type="number" min="0" max="59" placeholder="00" value="00" id="video-min-get-a-quote"><span class="calculate-number-form">MIN</span></label>
                         <span class="calculate-form-title calc-icon-calendar">How much time we have?</span>
-                        <select>
+                        <select id="get-quote-limit-select">
                             <option>24 hours</option>
                             <option>1 week</option>
                             <option>1 month</option>
                         </select>
                         <span class="calculate-form-title calc-icon-discount">discount code</span>
-                        <input type="rext" id="discount-enter" name="#">
+                        <input type="text" id="discount-enter" placeholder="" name="#">
                         <div class="calculate-price">
                             <p>PRICE <span class="calculate-price-number">000.00</span> USD</p>
-                            <input type="button" name="#" value="Order" onclick = showPopUp("order-sub-pop-up")>
+                            <input type="button" name="#" value="Order" onclick = passData("video-h-get-a-quote","video-h");passData("video-min-get-a-quote","video-min");passData("get-quote-limit-select","order-limit-select");passRadioBtnStatus("cen","een");showPopUp("order-sub-pop-up")>
                         </div>
                     </fieldset>
                     </form>
@@ -172,3 +172,4 @@
 <script src="js/main.js"></script>
 </body>
 </html>
+
