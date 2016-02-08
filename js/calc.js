@@ -23,3 +23,9 @@ function passRadioBtnStatus(from_radio_id, to_radio_id) {
                    to_radiobtn = document.getElementById(to_radio_id);
                    to_radiobtn.checked = from_radiobtn.checked;				   
 }
+
+function getTotalPrice(ent_lang, cap_lang, duration, coeff) {
+         lang_coeff = 3;
+         coeff = 1;
+         return lang_coeff*duration*coeff;
+}
