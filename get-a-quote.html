@@ -11,6 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Dosis:400,700,500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+	
     <script src="js/jquery-1.12.0.min.js"></script>
     <script src="js/calc.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -97,13 +98,13 @@
                         <fieldset>
                         <span class="calculate-form-title calc-icon-speaker">Choose entire language</span>
                         <div class="calculate-form-radio-wrapper">
-                            <input type="radio" value="1" name="c" id="cen"><label for="cen"></label><span class="calculate-number-form">ENGLISH</span>
-                            <input type="radio" value="2" name="c" id="cru" checked><label for="cru"></label><span class="calculate-number-form">RUSSIAN</span>
+                            <input type="radio" value="E_EN" name="c" id="cen" ><label for="cen"></label><span class="calculate-number-form">ENGLISH</span>
+                            <input type="radio" value="E_RU" name="c" id="cru" checked ><label for="cru"></label><span class="calculate-number-form">RUSSIAN</span>
                         </div>
                         <span class="calculate-form-title calc-icon-speech">Choose caption language</span>
                         <div class="calculate-form-radio-wrapper">
-                            <input type="radio" value="1" name="x" id="xen"><label for="xen"></label><span class="calculate-number-form">ENGLISH</span>
-                            <input type="radio" value="2" name="x" id="xru"checked><label for="xru"></label><span class="calculate-number-form">RUSSIAN</span>
+                            <input type="radio" value="C_EN" name="x" id="xen" ><label for="xen"></label><span class="calculate-number-form">ENGLISH</span>
+                            <input type="radio" value="C_RU" name="x" id="xru" checked ><label for="xru"></label><span class="calculate-number-form">RUSSIAN</span>
                         </div>
                         <span class="calculate-form-title calc-icon-time">Video duration</span>
                         <label><input type="number" min="0" max="100" placeholder="00" value="00" id="video-h-get-a-quote"><span class="calculate-number-form">H</span></label>
@@ -121,6 +122,7 @@
                             <input type="button" name="#" value="Order" onclick = 'passData("video-h-get-a-quote","video-h");
 							                                                       passData("video-min-get-a-quote","video-min");
 																				   passData("get-quote-limit-select","order-limit-select");
+																				   passData("calculate-discount-number","discount-enter");
 																				   passRadioBtnStatus("cen","een");
 																				   passRadioBtnStatus("cru","eru");
 																				   passRadioBtnStatus("xen","ven");
@@ -130,10 +132,8 @@
                     </fieldset>
                     </form>
                 </div>
-<script> $( ".calculate" ).change({msg: 'ok'}, function(event) {document.getElementById("calculated-price").innerHTML = getTotalPrice(event.data.msg,1,2,3);}); </script>
-<script> $( ".calculate" ).keyup(function() {
- document.getElementById("calculated-price").innerHTML = $("#video-min-get-a-quote").val();
-}); </script>
+<script> $( ".calculate" ).change({}, function(event) {document.getElementById("calculated-price").innerHTML = getTotalPrice($("input[name='c']:checked").val(), $("input[name='x']:checked").val()); }) </script>
+<script> $( ".calculate" ).keyup(function() { document.getElementById("calculated-price").innerHTML = $("#video-min-get-a-quote").val(); }); </script>
                 <div class="custom-orders clearfix">
                     <h2>For custom orders</h2>
                     <p>If you have high volume projects or
@@ -183,7 +183,7 @@
         </div>
     </footer>
 </div>
-<script src="js/main.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
 
