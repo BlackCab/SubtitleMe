@@ -12,13 +12,13 @@
   clear: both;
 }
 
-::-webkit-input-placeholder {color:#7d756b;font-size: 16px} /*---------костыль для стилизации placeholder-----------*/
+::-webkit-input-placeholder {color:#7d756b;font-size: 16px} /*---------для стилизации placeholder-----------*/
 ::-moz-placeholder          {color:#7d756b;font-size: 16px}
 :-moz-placeholder           {color:#7d756b;font-size: 16px}
 :-ms-input-placeholder      {color:#7d756b;font-size: 16px}
 
 @media (max-width: 700px) {
-  ::-webkit-input-placeholder {color:#7d756b;font-size: 14px} /*---------костыль для стилизации placeholder-----------*/
+  ::-webkit-input-placeholder {color:#7d756b;font-size: 14px} /*---------для стилизации placeholder-----------*/
   ::-moz-placeholder          {color:#7d756b;font-size: 14px}
   :-moz-placeholder           {color:#7d756b;font-size: 14px}
   :-ms-input-placeholder      {color:#7d756b;font-size: 14px}
@@ -873,7 +873,7 @@ footer  {
   }
 
   .footer-tuned {
-    margin-right:12px 0 0 0;
+    margin-right:12px;
     float: right;
     position: absolute;
     top: 0;
@@ -1023,8 +1023,8 @@ footer  {
   color:#6f665b;
 }
 
-#discount-enter {
-  width: 210px;
+#calculate-discount-number {
+  mni-width: 210px;
   box-sizing: border-box;
   height: 37px;
   padding: 0 6px 0;
@@ -1048,6 +1048,8 @@ footer  {
 }
 
 .calculate-price-number {
+  display: inline-block;
+  width: 68px;
   border: 2px solid @grey;
   border-radius: 5px;
   padding: 4.5px 10px 4.5px;
@@ -1067,7 +1069,7 @@ footer  {
 
 .calculate-form input[type=button] {
   font-family: 'lato', sans-serif;
-  margin: 21px 0 0 0;
+  margin: 9px 0 0 0;
   width: 100%;
   height: 39px;
   border: 0;

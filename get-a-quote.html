@@ -56,8 +56,8 @@
                         <input type="radio" value="2" name="v" id="vru"checked><label for="vru"></label><span class="number-form">Ru</span>
                     </div>
                     <span class="order-pop-up-form-title icon-time">Video duration</span>
-                    <label><input type="number" min="0" value="00" id="video-h"><span class="number-form">H</span></label>
-                    <label><input type="number" min="0" max="59" value="00" id="video-min"><span class="number-form">MIN</span></label>
+                    <label><input type="number" min="0" max="100" value="00" id="video-h"><span class="number-form">H</span></label>
+                    <label><input type="number" min="0" max="100" value="00" id="video-min"><span class="number-form">MIN</span></label>
                     <span class="order-pop-up-form-title icon-calendar">How much time we have?</span>
                     <select id="order-limit-select">
                         <option>24 hours</option>
@@ -106,8 +106,8 @@
                             <input type="radio" value="2" name="x" id="xru"checked><label for="xru"></label><span class="calculate-number-form">RUSSIAN</span>
                         </div>
                         <span class="calculate-form-title calc-icon-time">Video duration</span>
-                        <label><input type="number" min="0" placeholder="00" value="00" id="video-h-get-a-quote"><span class="calculate-number-form">H</span></label>
-                        <label><input type="number" min="0" max="59" placeholder="00" value="00" id="video-min-get-a-quote"><span class="calculate-number-form">MIN</span></label>
+                        <label><input type="number" min="0" max="100" placeholder="00" value="00" id="video-h-get-a-quote"><span class="calculate-number-form">H</span></label>
+                        <label><input type="number" min="0" max="100" placeholder="00" value="00" id="video-min-get-a-quote"><span class="calculate-number-form">MIN</span></label>
                         <span class="calculate-form-title calc-icon-calendar">How much time we have?</span>
                         <select id="get-quote-limit-select">
                             <option>24 hours</option>
@@ -115,7 +115,7 @@
                             <option>1 month</option>
                         </select>	
                         <span class="calculate-form-title calc-icon-discount">discount code</span>
-                        <input type="text" id="discount-enter" placeholder="" name="#">
+                        <input type="text" id="calculate-discount-number" placeholder="" name="#">
                         <div class="calculate-price">
                             <p>PRICE <span class="calculate-price-number" id = "calculated-price">000.00</span> USD</p>
                             <input type="button" name="#" value="Order" onclick = 'passData("video-h-get-a-quote","video-h");
