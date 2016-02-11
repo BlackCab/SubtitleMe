@@ -133,7 +133,7 @@
                     </form>
                 </div>
 <script> $( ".calculate" ).change({}, function(event) {document.getElementById("calculated-price").innerHTML = getTotalPrice($("input[name='c']:checked").val(), $("input[name='x']:checked").val()); }) </script>
-<script> $( ".calculate" ).keyup(function() { document.getElementById("calculated-price").innerHTML = $("#video-min-get-a-quote").val(); }); </script>
+<script> $( ".calculate" ).keyup({}, function(event) {document.getElementById("calculated-price").innerHTML = getTotalPrice($("input[name='c']:checked").val(), $("input[name='x']:checked").val()); }); </script>
                 <div class="custom-orders clearfix">
                     <h2>For custom orders</h2>
                     <p>If you have high volume projects or
