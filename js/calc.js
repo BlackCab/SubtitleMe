@@ -1,3 +1,9 @@
+function symLimit(input) {
+    if (input.value.length > 2) {
+	    input.value = input.value.substring(0,2);
+	}
+	}
+
 function showPopUp(id) {
 		    popUp = document.getElementById(id);
 		    popUp.style.display = "block";
