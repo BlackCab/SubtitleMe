@@ -107,8 +107,8 @@
                             <input type="radio" value="C_RU" name="x" id="xru" checked ><label for="xru"></label><span class="calculate-number-form">RUSSIAN</span>
                         </div>
                         <span class="calculate-form-title calc-icon-time">Video duration</span>
-                        <label><input type="number"  min="0" max="100" placeholder="00" value="00" id="video-h-get-a-quote"><span class="calculate-number-form">H</span></label>
-                        <label><input type="number"  min="0" max="100" placeholder="00" value="00" id="video-min-get-a-quote"><span class="calculate-number-form">MIN</span></label>
+                        <label><input type="number"  min="0" max="100" placeholder="00" value="00" id="video-h-get-a-quote" oninput = symLimit(this)><span class="calculate-number-form">H</span></label>
+                        <label><input type="number"  min="0" max="100" placeholder="00" value="00" id="video-min-get-a-quote" oninput = symLimit(this)><span class="calculate-number-form">MIN</span></label>
                         <span class="calculate-form-title calc-icon-calendar">How much time we have?</span>
                         <select id="get-quote-limit-select">
                             <option>24 hours</option>
