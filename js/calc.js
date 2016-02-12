@@ -1,3 +1,15 @@
+function showBurgerSprite(burgerFlag, elem, menuID) {
+    if (burgerFlag) {
+	elem.style.background="url(\"img/menu-open-sprite.png\") 0px 24px";
+	document.getElementById(menuID).style.display = "block";
+	return false
+	} else {
+	elem.style.background="url(\"img/menu-open-sprite.png\") -35px 0px";
+	document.getElementById(menuID).style.display = "none";
+	return true
+	}
+}
+
 function symLimit(input) {
     if (input.value.length > 2) {
 	    input.value = input.value.substring(0,2);
