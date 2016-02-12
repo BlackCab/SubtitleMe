@@ -78,8 +78,9 @@
     <div class="body-wrapper">
         <header>
             <a class="header-logo" href="index.html"><img src="img/logo.png" alt="logo subtitleme"/></a>
-            <a href="#" class="header-menu-open"></a>
-            <nav class="menu clearfix">
+			<script>burgerFlag = true</script>
+            <a href="#" class="header-menu-open" onclick = 'burgerFlag = showBurgerSprite(burgerFlag, this, "index-burger-menu");'></a>
+            <nav class="menu clearfix" id = "index-burger-menu">
                 <ul class="menu-list">
                     <li><a href="get-a-quote.html">Get a Quote</a></li>
                     <li><a href="#">feedbacks</a></li>
