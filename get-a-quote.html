@@ -36,7 +36,7 @@
                 </fieldset>
             </form>
         </div>
-        <a href="#" class="contact-us-close" onclick=hidePopUp("contact-pop-up")></a>
+        <a href="#" class="contact-us-close" onclick='popUpDisplay("contact-pop-up", "hide")'></a>
     </div>
     <div class="order-pop-up" id = "order-sub-pop-up">
         <div class="order-pop-up-wrapper">
@@ -76,7 +76,7 @@
                 </fieldset>
             </form>
         </div>
-        <a href="#" class="order-pop-up-close" onclick=hidePopUp("order-sub-pop-up")></a>
+        <a href="#" class="order-pop-up-close" onclick = 'popUpDisplay("order-sub-pop-up", "hide")'></a>
     </div>
     <div class="body-wrapper">
         <header>
@@ -87,7 +87,7 @@
                 <ul class="menu-list">
                     <li><a href="#">Get a Quote</a></li>
                     <li><a href="#">feedbacks</a></li>
-                    <li><a href="#" onclick = showPopUp("contact-pop-up")>Contact us </a></li>
+                    <li><a href="#" onclick = 'popUpDisplay("contact-pop-up","show")'>Contact us </a></li>
                 </ul>
             </nav>
         </header>
@@ -124,11 +124,11 @@
 							                                                       passData("video-min-get-a-quote","video-min");
 																				   passData("get-quote-limit-select","order-limit-select");
 																				   passData("calculate-discount-number","discount-enter");
-																				   passRadioBtnStatus("cen","een");
-																				   passRadioBtnStatus("cru","eru");
-																				   passRadioBtnStatus("xen","ven");
-																				   passRadioBtnStatus("xru","vru");
-																				   showPopUp("order-sub-pop-up")'>
+																				   passData("cen","een");
+																				   passData("cru","eru");
+																				   passData("xen","ven");
+																				   passData("xru","vru");
+																				   popUpDisplay("order-sub-pop-up", "show")'>
                         </div>
                     </fieldset>
                     </form>
