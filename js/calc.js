@@ -11,35 +11,35 @@ function showBurgerSprite(burgerFlag, elem, menuID) {
 }
 
 function symLimit(input) {
-    if (input.value.length > 2) {
-	    input.value = input.value.substring(0,2);
-	}
-	}
+        if (input.value.length > 2) {
+	        input.value = input.value.substring(0,2);
+	           }
+	           }
 
-function showPopUp(id) {
-		    popUp = document.getElementById(id);
-		    popUp.style.display = "block";
-		       }
-		
-function hidePopUp(id) {
-                    popUp = document.getElementById(id);
-                    popUp.style.display = "none";
-                }
+				
+function popUpDisplay(id, flag) {
+            popUp = document.getElementById(id);
+			if (flag=='show') {
+			    popUp.style.display = "block";
+			} else if (flag=='hide') {
+			    popUp.style.display = "none";
+			    } 
+            }
 				
 function passData(from_id, to_id) {
-                   from = document.getElementById(from_id);
-                   to = document.getElementById(to_id);
-                   if (from.value !="") {
-                   to.value = from.value;
-                       } else {
-				    to.value = from.placeholder;   
-				    } 			   
+            from = document.getElementById(from_id);
+            to = document.getElementById(to_id);
+            if (from.value !="") {
+                to.value = from.value;
+                } else {
+				to.value = from.placeholder;   
+				} 			   
                 }
 
 function passRadioBtnStatus(from_radio_id, to_radio_id) {
-                   from_radiobtn = document.getElementById(from_radio_id);
-                   to_radiobtn = document.getElementById(to_radio_id);
-                   to_radiobtn.checked = from_radiobtn.checked;				   
+            from_radiobtn = document.getElementById(from_radio_id);
+            to_radiobtn = document.getElementById(to_radio_id);
+            to_radiobtn.checked = from_radiobtn.checked;				   
                 }
 
 function getTotalPrice(ent_lang, cap_lang) {
@@ -88,4 +88,3 @@ function getTotalPrice(ent_lang, cap_lang) {
 		
         return lang_coeff*duration*dis_coeff*time_coeff;
                }
-
